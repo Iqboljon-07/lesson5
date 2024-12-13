@@ -9,7 +9,7 @@
 
 body{
 
-background-color:$maincolor;
+
 color:$textcolor;
 
 margin:0;
@@ -95,12 +95,13 @@ main{
 
    
 
-    display:flex;
+  
 padding:40px;
     display: grid;
     grid-template-columns: repeat(3,300px);
     grid-gap: 20px;
   grid-template-rows: repeat(auto-fill,350px);
+ justify-content: center;
 
 
 
