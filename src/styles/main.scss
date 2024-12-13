@@ -1,0 +1,195 @@
+
+@import "./variable";
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+background-color:$maincolor;
+color:$textcolor;
+
+margin:0;
+padding:0;
+max-width:1440px;
+max-height: 100vh;;
+margin: 0 auto;
+
+
+.todo{
+
+    display:flex;
+}
+
+}
+
+header{
+
+    width:350px;
+    height:200vh;
+    background-image: linear-gradient(to right top, #00dd28, #00de90, #00d8d5, #00cdfb, #00beff, #3dbefd, #56bffb, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    display: flex;
+
+    justify-content: center;
+
+    padding:40px;
+    
+  
+}
+form{
+    height:80vh;
+
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+    display: flex;
+    align-items: center;
+    
+    
+   
+}
+
+input{
+width:250px;
+    padding: 10px;
+   border: 0;
+    border-radius: 10px;
+    text-indent: 10px;
+    color:blue;
+  
+    outline:none; /* Removes default focus outline */
+  transition: border-color 0.8s red; /* Smooth transition */
+   &::placeholder{
+        color:grey;
+    }
+   
+}
+
+input:focus {
+    border:solid 2px blue; /* Blue border on focus */
+    box-shadow: 0 0 5px  blue /* Optional shadow effect */
+  }
+
+form button{
+width:200px;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    background-color: green;
+    &:hover{
+        background-color: lightgreen;
+    }
+
+}
+main{
+
+    width:calc(100% - 350px);
+    height:200vh;
+    background-color: dodgerblue;
+    // background-image: url("https://i.pinimg.com/736x/00/1d/86/001d869216ae571e80033a00dd00f9ff.jpg");
+    
+  
+
+   
+
+    display:flex;
+padding:40px;
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    grid-gap: 20px;
+  grid-template-rows: repeat(auto-fill,350px);
+
+
+
+}
+
+.todo-item{
+
+    width:300px;
+    height:350px;
+    background-color: aquamarine;
+    border-radius: 20px;
+      
+    
+   
+
+}
+.img{
+display:flex;
+flex-direction: column;
+align-items: center;
+width:300px;
+height:150px;
+background-color: blue;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+
+}
+
+img{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+}
+.btns{
+    display:flex;
+    gap:10px;
+    button{
+ padding:10px;
+ width:100px;
+ border: none;
+ border-radius: 10px;
+
+ &:first-child{
+ background-color:$redcolor;
+    }
+    &:last-child{
+ background-color: green;
+}
+}
+}
+
+
+.todolist{
+
+
+    background-color:$textcolor1;
+    height:calc(100% - 150px );
+    border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+
+    // overflow-x: scroll;
+    h2{
+       
+       
+       
+        text-align: center;
+       letter-spacing: 2px;
+       
+
+
+    }
+    h3{
+
+        letter-spacing: 2px;
+            width:250px;
+            height:auto;
+            overflow:hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+           
+            text-align: center;
+            
+    
+    
+       
+    }
+
+}
