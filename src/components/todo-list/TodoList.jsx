@@ -149,15 +149,26 @@ function TodoList() {
           <input
             value={age}
             onChange={(event) => setAge(event.target.value)}
-            type="text"
+            type="number"
             placeholder="age"
           />
-          <input
+          {/* <input
             value={gender}
             onChange={(event) => setGender(event.target.value)}
             type="text"
             placeholder="gender"
-          />
+          /> */}
+
+          <select
+            value={gender}
+            onChange={(event) => setGender(event.target.value)}
+            name=""
+            id=""
+          >
+            <option value=""> Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
           <input
             value={prefession}
             onChange={(event) => setPrefession(event.target.value)}

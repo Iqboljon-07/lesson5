@@ -194,3 +194,28 @@ justify-content: space-evenly;
     }
 
 }
+select{
+    width:250px;
+    padding: 10px;
+   border: 0;
+    border-radius: 10px;
+    text-indent: 10px;
+    color:grey;
+  
+    outline:none; /* Removes default focus outline */
+  transition: border-color 0.8s red; /* Smooth transition */
+   &::placeholder{
+        color:grey;
+    }
+   
+
+    
+}
+
+option{
+
+color:blue;
+
+
+}
+
